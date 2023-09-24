@@ -16,6 +16,11 @@
             src: url(Montserrat-Regular.woff2);
         }
 
+        @font-face {
+            font-family: 'bootstrap-icons';
+            src: url(./bootstrap-icons.woff2);
+        }
+
         body {
             -webkit-user-select: none;
             user-select: none;
@@ -34,11 +39,15 @@
         .card-title {
             font-size: 15px;
         }
-        
+
         .card-text {
             font-size: 13px;
             opacity: .64;
             margin-top: 2px;
+        }
+        
+        .bootstrap-icons {
+            font-family: bootstrap-icons;
         }
     </style>
 </head>
@@ -47,7 +56,7 @@
     <div class="mdui-container">
         <br /><br />
         <div class="mdui-typo">
-            <h1 style="margin: 0;">LTDSA</h1>
+            <h1 style="margin: 0;">LTDSA<button class="mdui-btn mdui-btn-icon mdui-float-right" style="vertical-align: super;" onclick="window.open('https://github.com/LTDSA')"><i class="mdui-icon bootstrap-icons">&#xF3ED;</i></i></button></h1>
             <p>Tiny works</p>
         </div>
         <br /><br />
