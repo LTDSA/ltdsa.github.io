@@ -11,27 +11,80 @@
     <link href="https://cdn.staticfile.org/mdui/1.0.2/css/mdui.min.css" rel="stylesheet">
     <script src="https://cdn.staticfile.org/mdui/1.0.2/js/mdui.min.js"></script>
     <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url(Montserrat-Regular.woff2);
+        }
+
         body {
             -webkit-user-select: none;
             user-select: none;
+
+            font-family: Montserrat;
+            background-color: #fafafa;
+        }
+
+        .card {
+            background-color: white;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0px .5px 2px 0px rgba(0, 0, 0, .2);
+        }
+
+        .card-title {
+            font-size: 15px;
+        }
+        
+        .card-text {
+            font-size: 13px;
+            opacity: .64;
+            margin-top: 2px;
         }
     </style>
 </head>
 
 <body>
     <div class="mdui-container">
+        <br /><br />
         <div class="mdui-typo">
-            <h1>LTDSA</h1>
+            <h1 style="margin: 0;">LTDSA</h1>
             <p>Tiny works</p>
         </div>
-        <br />
-        <div class="mdui-list">
-            <a href="/Photomark" class="mdui-list-item mdui-ripple">Photomark</a>
-            <a href="https://m.ltdsa.cn" class="mdui-list-item mdui-ripple">PowerMusic</a>
+        <br /><br />
+        <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3 mdui-row-lg-4 mdui-row-xl-5">
+            <div class="mdui-col">
+                <div class="card mdui-ripple" onclick="window.open('https://ac.ltdsa.cn')">
+                    <div class="card-title">AutoCourse</div>
+                    <div class="card-text">An automated online class software</div>
+                </div>
+            </div>
+            <div class="mdui-col">
+                <div class="card mdui-ripple" onclick="window.open('/Photomark')">
+                    <div class="card-title">Photomark</div>
+                    <div class="card-text">A tool to add watermark on pictures</div>
+                </div>
+            </div>
+            <div class="mdui-col">
+                <div class="card mdui-ripple" onclick="window.open('https://m.ltdsa.cn')">
+                    <div class="card-title">PowerMusic</div>
+                    <div class="card-text">An online music player</div>
+                </div>
+            </div>
+            <div class="mdui-col">
+                <div class="card mdui-ripple" onclick="window.open('https://adb.ltdsa.cn')">
+                    <div class="card-title">WebADB</div>
+                    <div class="card-text">An Android management tool</div>
+                </div>
+            </div>
+            <div class="mdui-col">
+                <div class="card mdui-ripple" onclick="window.open('https://word.ltdsa.cn')">
+                    <div class="card-title">WordAlbum</div>
+                    <div class="card-text">An online English dictionary</div>
+                </div>
+            </div>
         </div>
-        <br />
-        <div style="text-align: center; opacity: .64;">
-            <p>© LTDSA 2022</p>
+        <div style="opacity: .64;">
+            <p>© LTDSA 2022-2023</p>
         </div>
     </div>
 </body>
