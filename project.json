@@ -1,0 +1,44 @@
+[
+    {
+        "name": "AutoCourse",
+        "desc": "An automated online class software",
+        "platform": ["macOS", "Windows"],
+        "url": "https://ac.ltdsa.cn"
+    },
+    {
+        "name": "BGET",
+        "desc": "A tool to get Bilibili video data",
+        "platform": ["Android"],
+        "url": "https://coolapk.com/apk/cn.ltdsa.bilibili.get"
+    },
+    {
+        "name": "Photomark",
+        "desc": "A tool to add watermark on pictures",
+        "platform": ["Web"],
+        "url": "https://ltdsa.github.io/Photomark"
+    },
+    {
+        "name": "PowerBox",
+        "desc": "An online toolbox for developers",
+        "platform": ["Web"],
+        "url": "https://tool.ltdsa.cn"
+    },
+    {
+        "name": "PowerMusic",
+        "desc": "An online music player",
+        "platform": ["Web"],
+        "url": "https://m.ltdsa.cn"
+    },
+    {
+        "name": "WebADB",
+        "desc": "A rapid Android management tool",
+        "platform": ["Web"],
+        "url": "https://adb.ltdsa.cn"
+    },
+    {
+        "name": "WordAlbum",
+        "desc": "An online English dictionary",
+        "platform": ["Web"],
+        "url": "https://word.ltdsa.cn"
+    }
+]
