@@ -75,8 +75,7 @@
         function getProject() {
             fetch('./project.json').then(res => res.json()).then(data => {
                 data.forEach(i => {
-                    let platform = Array.isArray(i.platform) ? i.platform.join(' / ') : i.platform;
-                    let projectCard = `<div class="mdui-col"><div class="card mdui-ripple" onclick="window.open('${i.url}')"><div class="card-title">${i.name}</div><div class="card-text">${i.desc}</div><div class="card-link">${platform} <i class="mdui-icon bootstrap-icons" style="font-size: 10px; line-height: inherit; vertical-align: bottom;">&#xF144;</i></div></div></div>`;
+                    let projectCard = `<div class="mdui-col"><div class="card mdui-ripple" onclick="window.open('${i.url}')"><div class="card-title">${i.name}</div><div class="card-text">${i.desc}</div><div class="card-link">${i.platform.join(' / ')} <i class="mdui-icon bootstrap-icons" style="font-size: 10px; line-height: inherit; vertical-align: bottom;">&#xF144;</i></div></div></div>`;
                     document.querySelector('#project').innerHTML += projectCard;
                 });
             }).catch(() => {
